@@ -1,0 +1,26 @@
+<!-- 
+<ul class="grid gap-4 grid-cols-2 md:grid-cols-4">
+  <% @users.each do |user| %>
+    <%= render UserComponent.new(user) %> 
+  <% end %>
+</ul> 
+  Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 1.8ms | Allocations: 22305) 
+  4x faster than partials
+-->
+
+<!-- 
+<ul class="grid gap-4 grid-cols-2 md:grid-cols-4">
+  <%= render @users %>
+</ul> 
+
+  Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 1.8ms | Allocations: 29450)
+-->
+
+<ul class="grid gap-4 grid-cols-2 md:grid-cols-4">
+  <% @users.each do |user| %>
+    <%= render partial: 'users/user', locals: { user: user} %>
+  <% end %>
+</ul> 
+<!--
+  Completed 200 OK in 263ms (Views: 259.5ms | ActiveRecord: 1.8ms | Allocations: 92512)
+ -->
