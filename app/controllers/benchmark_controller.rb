@@ -11,7 +11,7 @@ class BenchmarkController < ApplicationController
       end
     end
 
-    render plain: "Time to render phlex component for 1k users: #{time.real} microseconds"
+    render plain: "Time to render phlex component for 1k users: #{time.real} seconds"
   end
 
   def rails_render_benchmark
@@ -25,6 +25,6 @@ class BenchmarkController < ApplicationController
       end
     end
 
-    render plain: "Time to render partial for 1000 users: #{time.real} microseconds"
+    render plain: "Time to render partial for 1000 users: #{time.real} seconds"
   end
 end
