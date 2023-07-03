@@ -44,7 +44,7 @@ After performing manual testing on the rendering performance, the following resu
 | Phlex components  | 0.019 seconds            |
 | Rails partials    | 0.165 seconds            |
 
-Phlex is 8.68 times faster than Rails partials.
+**Phlex is 8.68 times faster than Rails partials.**
 
 ### Rake Task Results
 Running the rendering benchmark using Rake tasks produced the following average times:
@@ -54,7 +54,7 @@ Running the rendering benchmark using Rake tasks produced the following average 
 | Phlex components  | 0.005220 seconds         |
 | Rails partials    | 0.023790 seconds         |
 
-Phlex is 4.56 times faster than Rails partials.
+**Phlex is 4.56 times faster than Rails partials.**
 
 Comparing the results between manual testing and Rake tasks, it's evident that there is a difference in the measured times. This can be attributed to various factors such as system load, caching, or variations in the test environment.
 
